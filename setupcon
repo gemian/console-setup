@@ -1214,7 +1214,7 @@ if [ "$setupdir" ]; then
                         ;;
                     /*)
                         echo -n "'"
-                        if [ -e "$arg" ]; then
+                        if [ -f "$arg" ]; then
                             f="${arg##*/}"
                             f="${f%.gz}"
                             case "$arg" in
