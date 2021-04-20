@@ -83,4 +83,4 @@ $~maintainer-clean: $~clean
 	cd $(kbddir) && ./xmlreader >KeyboardNames.pl
 
 $./KeyboardNames.pl:
-	$(kbddir)/xmlreader $(xkbdir)/rules/xorg.xml >$@
+	$(kbddir)/xmlreader $(xkbdir)/rules/base.xml >$@

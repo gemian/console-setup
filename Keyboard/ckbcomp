@@ -181,7 +181,7 @@ EOT
     }
 }
 
-$rules = 'xorg' if (! $rules);
+$rules = 'base' if (! $rules);
 $model = 'pc104' if (! $model);
 $backspace = $freebsd ? 'bs' : 'del' if (! $backspace);
 
