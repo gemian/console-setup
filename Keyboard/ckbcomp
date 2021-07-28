@@ -3835,7 +3835,7 @@ sub x_to_kernelsym {
     }
     if (defined $kernelkeysym) {
 	my $uni = hex ($kernelkeysym);
-	if (defined $forbidden{$uni}) {
+	if ($uni > 0xFFFF || defined $forbidden{$uni}) {
             if ($verbosity >= 8) {
                 warning "Forbidden Unicode \"U+$kernelkeysym\"\n";
             }
