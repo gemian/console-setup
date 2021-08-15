@@ -7,7 +7,7 @@
 # Copyright (C) 2003,2004,2005,2008 Software in the Public Interest, Inc.
 # This file is distributed under the same license as debian-installer.
 #
-# Changwoo Ryu <cwryu@debian.org>, 2010-2012, 2014-2015, 2017-2018, 2020.
+# Changwoo Ryu <cwryu@debian.org>, 2010-2012, 2014-2015, 2017-2018, 2020-2021.
 #
 # Translations from iso-codes:
 # Copyright (C)
@@ -28,7 +28,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2020-04-21 05:24+0900\n"
+"PO-Revision-Date: 2021-08-15 02:35+0900\n"
 "Last-Translator: Changwoo Ryu <cwryu@debian.org>\n"
 "Language-Team:  Korean <debian-l10n-korean@lists.debian.org>\n"
 "Language: ko\n"
@@ -313,13 +313,12 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
 msgstr ""
-"콘솔에 사용할 글꼴 크기를 고르십시오. 참고로 컴퓨터가 부팅할 때 사용하는 글"
-"꼴 크기가 8x16입니다."
+"콘솔에 사용할 글꼴 크기를 고르십시오. 글꼴 크기에 따라 프레임버퍼가 필요할 수"
+"도 있습니다."
 
 #. Type: select
 #. Description
@@ -942,7 +941,7 @@ msgstr "벨기에어"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Berber (Latin)"
-msgstr ""
+msgstr "베르베르어 (라틴 문자)"
 
 #. Type: select
 #. Choices
