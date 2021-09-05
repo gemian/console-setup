@@ -347,7 +347,7 @@ $(ALL_BSD_FONTS) :
 		$(equivalents) $(symbolsets) $(size) $@ $(@:%.raw=%.raw.sfm)
 
 %.fnt : %.raw
-	uuencode $< $(*F) >$@
+	umask 022; uuencode $< $(*F) >$@
 
 gzipped_linux_fonts : $(GZIPPED_LINUX_FONTS)
 
@@ -372,7 +372,7 @@ $(SCRNMAPS) : somefont = \
 $(SCRNMAPS) : sfm = $(somefont:%.fnt=%.raw.sfm)
 
 $(SCRNMAPS) : $(UUENCODED_BSD_FONTS) $./freebsd.set $./fbsdmap
-	$(fntdir)/fbsdmap --binaryscm $(fntdir)/freebsd.set $(sfm) \
+	umask 022; $(fntdir)/fbsdmap --binaryscm $(fntdir)/freebsd.set $(sfm) \
 		$(fntdir)/../acm/$(encoding).acm | \
 		uuencode $(encoding_fontset) >$@
 

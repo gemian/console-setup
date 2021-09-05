@@ -2,6 +2,7 @@ console-setup (1.206) UNRELEASED; urgency=medium
 
   [ Reiner Herrmann ]
   * Fix reproducibility against file ordering.
+  * Fix reproducibility against umask. Closes: #825138.
 
  -- Samuel Thibault <sthibault@debian.org>  Sun, 05 Sep 2021 14:34:03 +0200
 
