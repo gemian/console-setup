@@ -13,6 +13,9 @@ console-setup (1.206) UNRELEASED; urgency=medium
   * Fix reproducibility against file ordering.
   * Fix reproducibility against umask. Closes: #825138.
 
+  [ Peter Hutterer ]
+  * Keyboard/ckbcomp: use the "base" XKB files, not "xorg".
+
  -- Samuel Thibault <sthibault@debian.org>  Sun, 05 Sep 2021 14:34:03 +0200
 
 console-setup (1.205) unstable; urgency=medium
