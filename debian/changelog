@@ -1,5 +1,14 @@
 console-setup (1.206) UNRELEASED; urgency=medium
 
+  [ Sébastien Villemot ]
+  * ckbcomp: When translating X symbols to kernel symbols, ignore Unicode
+    code points above 0xFFFF. Those code points aren’t supported by the
+    Linux kernel, so loadkeys won’t be able to load them, or even parse
+    the value. This affects the fr(bepo_afnor) keymap, which includes the
+    copyleft symbol U+1F12F.
+    Thanks to Jean-Louis Biasini for the bug report and Anisse Astier for the
+    initial patch. (Closes: #968195)
+
   [ Reiner Herrmann ]
   * Fix reproducibility against file ordering.
   * Fix reproducibility against umask. Closes: #825138.
