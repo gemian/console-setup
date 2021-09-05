@@ -27,7 +27,7 @@ $./%.ekbd :
 $./charmap_functions.sh : $(acmfiles)
 	$(kbddir)/make_charmap_functions $(kbddir)/../acm $(charmaps) >$@
 
-acmfiles := $(wildcard $./../acm/*.acm)
+acmfiles := $(sort $(wildcard $./../acm/*.acm))
 
 charmaps := $(basename $(notdir $(acmfiles)))
 
