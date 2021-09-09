@@ -31,7 +31,7 @@ msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2021-06-12 23:25+0300\n"
+"PO-Revision-Date: 2021-07-08 13:18+0300\n"
 "Last-Translator: Fatih Altun <fatih.altun@pardus.org.tr>\n"
 "Language-Team: Debian L10N Turkish\n"
 "Language: tr\n"
@@ -324,14 +324,12 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
 msgstr ""
-"Lütfen uçbiriminde kullanmak istediğiniz yazıtipi boyutunu seçin.  Fikir "
-"edinmeniz açısından; bilgisayarınızın başlarken kullandığı yazıtipinin "
-"boyutu 8x16'dır."
+"Lütfen konsol için yazı tipi boyutunu seçin. Bazı yazı tipi boyutları "
+"çerçeve arabelleği gerektirir."
 
 #. Type: select
 #. Description
