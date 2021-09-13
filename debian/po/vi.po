@@ -13,14 +13,15 @@
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2010
 # Hai-Nam Nguyen <hainam@jcisio.com>, 2012
 # Trần Ngọc Quân <vnwildman@gmail.com>, 2018, 2019.
+# Tran Dinh Hai <haidinhtran@pm.me>, 2021.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer sublevel1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2019-02-27 14:34+0700\n"
-"Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
+"PO-Revision-Date: 2021-09-08 05:34+0000\n"
+"Last-Translator: Tran Dinh Hai <haidinhtran@pm.me>\n"
 "Language-Team: Vietnamese <debian-l10n-vietnamese@lists.debian.org>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -946,7 +947,7 @@ msgstr "Bỉ"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Berber (Latin)"
-msgstr ""
+msgstr "Berber (Latin)"
 
 #. Type: select
 #. Choices
@@ -1247,7 +1248,7 @@ msgstr "Châu Mỹ Latinh"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Latvian"
-msgstr "Lát-vi-a "
+msgstr "Lát-vi-a"
 
 #. Type: select
 #. Choices
@@ -1457,7 +1458,7 @@ msgstr "Thổ Nhĩ Kỳ (bố trí Q)"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Ukrainian"
-msgstr "Tiếng Ukraina "
+msgstr "Tiếng Ukraina"
 
 #. Type: select
 #. Choices
