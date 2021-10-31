@@ -18,6 +18,8 @@ console-setup (1.206) UNRELEASED; urgency=medium
 
   [ Samuel Thibault ]
   * Keyboard/kbdcompiler: Avoid 'custom' layout. Closes: #997110.
+  * console-setup-linux.lintian-overrides: Suppress warnings about national
+    encodings.
 
  -- Samuel Thibault <sthibault@debian.org>  Sun, 05 Sep 2021 14:34:03 +0200
 
