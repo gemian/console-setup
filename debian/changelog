@@ -16,6 +16,9 @@ console-setup (1.206) UNRELEASED; urgency=medium
   [ Peter Hutterer ]
   * Keyboard/ckbcomp: use the "base" XKB files, not "xorg".
 
+  [ Samuel Thibault ]
+  * Keyboard/kbdcompiler: Avoid 'custom' layout. Closes: #997110.
+
  -- Samuel Thibault <sthibault@debian.org>  Sun, 05 Sep 2021 14:34:03 +0200
 
 console-setup (1.205) unstable; urgency=medium
