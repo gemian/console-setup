@@ -1,4 +1,6 @@
-console-setup (1.206) UNRELEASED; urgency=medium
+console-setup (1.206) unstable; urgency=medium
+
+  * Team upload.
 
   [ Sébastien Villemot ]
   * ckbcomp: When translating X symbols to kernel symbols, ignore Unicode
@@ -21,7 +23,7 @@ console-setup (1.206) UNRELEASED; urgency=medium
   * console-setup-linux.lintian-overrides: Suppress warnings about national
     encodings.
 
- -- Samuel Thibault <sthibault@debian.org>  Sun, 05 Sep 2021 14:34:03 +0200
+ -- Samuel Thibault <sthibault@debian.org>  Sun, 31 Oct 2021 18:13:37 +0100
 
 console-setup (1.205) unstable; urgency=medium
 
