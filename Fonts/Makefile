@@ -335,15 +335,15 @@ $(ALL_BSD_FONTS) : symbolsets = \
  $(fntdir)/ascii.set+$(fntdir)/freebsd.set+$(codesetfile)+:$(fntdir)/useful.set
 
 $(ALL_LINUX_NONFB_FONTS) :
-	$(fntdir)/bdf2psf --log $(@:%.psf=%.log) $(bdfs) $(equivalents) \
+	umask 022; $(fntdir)/bdf2psf --log $(@:%.psf=%.log) $(bdfs) $(equivalents) \
 			$(symbolsets) $(size) $@ $(@:%.psf=%.sfm)
 
 $(ALL_LINUX_FB_FONTS) :
-	$(fntdir)/bdf2psf --fb --log $(@:%.psf=%.log) $(bdfs) $(equivalents) \
+	umask 022; $(fntdir)/bdf2psf --fb --log $(@:%.psf=%.log) $(bdfs) $(equivalents) \
 				$(symbolsets) $(size) $@ $(@:%.psf=%.sfm)
 
 $(ALL_BSD_FONTS) :
-	$(fntdir)/bdf2psf --raw --log $(@:%.raw=%.raw.log) $(bdfs) \
+	umask 022; $(fntdir)/bdf2psf --raw --log $(@:%.raw=%.raw.log) $(bdfs) \
 		$(equivalents) $(symbolsets) $(size) $@ $(@:%.raw=%.raw.sfm)
 
 %.fnt : %.raw
