@@ -1,5 +1,6 @@
 console-setup (1.207) unstable; urgency=medium
 
+  * Team upload.
   * More reproducibility fixes against umask.
 
  -- Samuel Thibault <sthibault@debian.org>  Mon, 01 Nov 2021 22:05:42 +0100
