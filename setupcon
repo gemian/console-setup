@@ -557,12 +557,6 @@ if [ "$do_font" ]; then
             ;;
     esac
 fi
-# Due to bug in splashy and usplash: do not load fonts (#540314)
-if which pidof >/dev/null; then
-    if pidof splashy > /dev/null || pidof usplash > /dev/null; then
-        do_font=''
-    fi
-fi
 
 # CODESET
 [ "$CODESET" != guess ] || CODESET=''
