@@ -7,7 +7,7 @@
 # Danish messages for debian-installer.
 # This file is distributed under the same license as debian-installer.
 # Michael Millet <mikevlet@protonmail.com>, 2021.
-# Joe Hansen <joedalton2@yahoo.dk>, 2011, 2012, 2013, 2014, 2015, 2016, 2017.
+# Joe Hansen <joedalton2@yahoo.dk>, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2021.
 # Ask Hjorth Larsen <asklarsen@gmail.com>, 2010.
 # Mads Bille Lundby <lundbymads@gmail.com, 2009.
 # Henrik Christian Grove <debian@3001.dk>, 2008.
@@ -40,8 +40,8 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_da\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2021-01-30 22:11+0000\n"
-"Last-Translator: Michael Millet <mikevlet@protonmail.com>\n"
+"PO-Revision-Date: 2021-12-28 22:11+0000\n"
+"Last-Translator: Joe Hansen <joedalton2@yahoo.dk>\n"
 "Language-Team: <dansk@dansk-gruppen.dk>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
@@ -332,13 +332,12 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
 msgstr ""
-"Vælg venligst skrifttypens størrelse i konsollen. Til sammenligning er den "
-"anvendte skrifttypestørrelse 8x16, når computeren starter op."
+"Vælg venligst skrifttypens størrelse i konsollen. Nogle skriftstørrelser "
+"kræver framebuffer."
 
 #. Type: select
 #. Description
@@ -426,7 +425,7 @@ msgid ""
 "is defined as XKBLAYOUT=\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\"."
 msgstr ""
 "Det nuværende tastaturlayout i opsætningsfilen /etc/default/keyboard er "
-"defineret som XKBLAYOUT=\"${XKBLAYOUT}\" og XKBVARIANT=\"${XKBVARIANT}\"."
+"defineret som XKBLAYOUT=»${XKBLAYOUT}« og XKBVARIANT=»${XKBVARIANT}«."
 
 #. Type: boolean
 #. Description
@@ -457,10 +456,9 @@ msgid ""
 "XKBVARIANT=\"${XKBVARIANT}\".  This default value is based on the currently "
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Standardværdien for tastaturlayoutet er XKBLAYOUT=\"${XKBLAYOUT}\" og "
-"XKBVARIANT=\"${XKBVARIANT}\".  Denne standardværdi er baseret på den "
-"nuværende definition af sprog og region, samt indstillingerne i /etc/X11/"
-"xorg.conf."
+"Standardværdien for tastaturlayoutet er XKBLAYOUT=»${XKBLAYOUT}« og "
+"XKBVARIANT=»${XKBVARIANT}«. Denne standardværdi er baseret på den nuværende "
+"definition af sprog og region, samt indstillingerne i /etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
@@ -489,7 +487,7 @@ msgid ""
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
 "De nuværende tastaturindstillinger i opsætningsfilen /etc/default/keyboard "
-"er defineret som XKBOPTIONS=\"${XKBOPTIONS}\"."
+"er defineret som XKBOPTIONS=»${XKBOPTIONS}«."
 
 #. Type: boolean
 #. Description
@@ -518,9 +516,9 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"Standardværdien for indstillingerne af tastaturlayout er XKBOPTIONS="
-"\"${XKBOPTIONS}\".  Den er baseret på den nuværende definition af sprog og "
-"region, samt indstillingerne i /etc/X11/xorg.conf."
+"Standardværdien for indstillingerne af tastaturlayout er "
+"XKBOPTIONS=»${XKBOPTIONS}«. Den er baseret på den nuværende definition af "
+"sprog og region, samt indstillingerne i /etc/X11/xorg.conf."
 
 #. Type: boolean
 #. Description
@@ -912,8 +910,8 @@ msgid ""
 "By default the combination Control+Alt+Backspace does nothing.  If you want "
 "it can be used to terminate the X server."
 msgstr ""
-"Som standard gør kombinationen Ctrl+Alt+Backspace intet.  Hvis du ønsker, "
-"kan den blive brugt til at terminere X-serveren."
+"Som standard gør kombinationen Ctrl+Alt+Backspace intet. Hvis du ønsker, kan "
+"den blive brugt til at terminere X-serveren."
 
 # console-keymaps-acorn, American
 #. Type: select
