@@ -3,6 +3,9 @@ console-setup (1.208) UNRELEASED; urgency=medium
   [ Christian Göttsche ]
   * Drop splashy/usplash workaround.
 
+  [ Diego Escalante Urrelo ]
+  * setupcon: Check files are regular files before copying.
+
  -- Samuel Thibault <sthibault@debian.org>  Sat, 29 Jan 2022 15:05:29 +0100
 
 console-setup (1.207) unstable; urgency=medium
