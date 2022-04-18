@@ -11,6 +11,7 @@
 # Eirik U. Birkeland <eirbir@gmail.com>, 2010.
 # Allan Nordhøy <epost@anotheragency.no>, 2017.
 # Alexander Jansen <bornxlo@gmail.com>, 2018.
+# aujawindar <eivind.odegard@sogn.no>, 2022.
 #
 # Translations from iso-codes:
 #   Alastair McKinstry <mckinstry@computer.org>, 2001.
@@ -26,8 +27,8 @@ msgstr ""
 "Project-Id-Version: nn\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2019-08-28 18:10+0000\n"
-"Last-Translator: leela <53352@protonmail.com>\n"
+"PO-Revision-Date: 2022-04-17 17:12+0000\n"
+"Last-Translator: aujawindar <eivind.odegard@sogn.no>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
@@ -360,17 +361,15 @@ msgstr "Anna"
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Keyboard model:"
-msgstr "Vel eit tastaturoppsett"
+msgstr "Tastaturoppsett:"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Please select the model of the keyboard of this machine."
-msgstr "Vel tastaturtypen som skal setjast opp."
+msgstr "Vel kva modell tastatur denne maskina har."
 
 #. Type: select
 #. Description
@@ -792,11 +791,11 @@ msgid ""
 "That key may also be used to input national letters when the keyboard is in "
 "Latin mode."
 msgstr ""
-"Når tastaturet er i nasjonal modus og du berre vil skrive nokre få latinske "
-"bokstavar, kan det vere betre å byte mellombels til latinsk modus. "
-"Tastaturet held seg i den modusen så lenge den valde tasten er heldt inne. "
-"Den tasten kan òg brukast for å skriva nasjonale bokstavar når tastaturet er "
-"i latinmodus."
+"Når tastaturet er sett til lokalt språk og du ønskjer å skriva nokre få "
+"latinske bokstavar, kan det enklaste vera å byte midlartidig til latinske "
+"teikn. Tastaturet vil vera latinsk modus så lenge den valde tasten vert "
+"halde nede. Denne tasten kan også brukast for å skriva inn lokale teikn når "
+"tastaturet er i latin-modus."
 
 #. Type: select
 #. Description
@@ -810,9 +809,8 @@ msgstr ""
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
-#, fuzzy
 msgid "The default for the keyboard layout"
-msgstr "Vel eit tastaturoppsett"
+msgstr "Standard tastaturoppsett"
 
 #. Type: select
 #. Choices
@@ -840,7 +838,7 @@ msgstr "Båe Alt-tastane"
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr "Tast som skal fungere som AltGr:"
+msgstr "Tast som skal verka som AltGr-tast:"
 
 #. Type: select
 #. Description
@@ -852,26 +850,24 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
-"I nokre tastaturutformingar er AltGr ein modifiserande tast som blir brukt "
-"for å skrive nokre teikn, særs teikn som er uvanlege på språket i "
-"tastaturutforminga, som utanlandske valutateikn og aksentteikn. Dei er ofte "
-"trykte som ekstra symbol på tastane."
+"På nokre tastatur er AltGr ein endringstast som vert brukt for å skriva inn "
+"spesielle teikn, som oftast teikn som er uvanlege i det språket tastaturet "
+"er sett opp for. Dette kan vera valutasymbol for andre språk, aksentteikn og "
+"liknande. Desse er ofte merkte med eit ekstra symbol på tastane."
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
-#, fuzzy
 msgid "No compose key"
-msgstr "Vel harddisk:"
+msgstr "Ingen modifiseringstast"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
-#, fuzzy
 msgid "Compose key:"
-msgstr "Vel harddisk:"
+msgstr "Modifiseringstast:"
 
 #. Type: select
 #. Description
@@ -882,9 +878,8 @@ msgid ""
 "the next few keystrokes as a combination in order to produce a character not "
 "found on the keyboard."
 msgstr ""
-"Modifiseringstasten (òg kjend som Multi_key) gjer at datamaskinen tolker dei "
-"neste tastetrykka som ein kombinasjon for å lage eit teikn som ikkje finst "
-"på tastaturet."
+"Modifiseringstasten gjer at dei neste få tastetrykka vert tolka som ei "
+"samansetjing for å laga eit teikn som ikkje finst på tastaturet."
 
 #. Type: select
 #. Description
@@ -895,9 +890,9 @@ msgid ""
 "Unicode mode, regardless of what you choose here, you can always also use "
 "the Control+period combination as a Compose key."
 msgstr ""
-"I tekstkonsollen fungerer ikkje modifiseringstasten i Unicode-modus. Viss "
-"Unicode-modus ikkje er sett, uansett kva du vel her, kan du alltid bruka "
-"«Ctrl + punktum» som ein modifiseringstast."
+"Modifiseringstasten verkar ikkje i Unicode-modus på tekstkonsollen. Når "
+"Unocode-modus ikkje er sett, kan du alltid bruka kombinasjonen Ctrl + "
+"punktum som ein modifiseringstast uavhngig av kav du har vald her."
 
 #. Type: boolean
 #. Description
@@ -978,7 +973,7 @@ msgstr "Belgisk"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Berber (Latin)"
-msgstr ""
+msgstr "Berbersk (latin)"
 
 #. Type: select
 #. Choices
@@ -1397,7 +1392,6 @@ msgstr "Singalesisk"
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
-#, fuzzy
 msgid "Slovak"
 msgstr "Slovakisk"
 

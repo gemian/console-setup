@@ -31,13 +31,14 @@
 # Boyuan Yang <073plan@gmail.com>, 2018, 2019, 2020.
 # 玉堂白鹤 <yjwork@qq.com>, 2020.
 # TTT DEAL <ikmn2jlt@linshiyouxiang.net>, 2021.
+# Wenbin Lv <wenbin816@gmail.com>, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2022-04-13 14:29+0000\n"
+"PO-Revision-Date: 2022-04-17 17:12+0000\n"
 "Last-Translator: Wenbin Lv <wenbin816@gmail.com>\n"
 "Language-Team: <debian-l10n-chinese@lists.debian.org>\n"
 "Language: zh_CN\n"
@@ -51,14 +52,14 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:2001
 msgid "Do not change the boot/kernel font"
-msgstr "不修改启动/内核字体"
+msgstr "不修改启动字体或内核字体"
 
 #. Type: text
 #. Description
 #. :sl3:
 #: ../console-setup.templates:3001
 msgid "Let the system select a suitable font"
-msgstr "系统自动选择适合的字体"
+msgstr "让系统自动选择适合的字体"
 
 #. Type: text
 #. Description
@@ -66,7 +67,7 @@ msgstr "系统自动选择适合的字体"
 #. :sl3:
 #: ../console-setup.templates:4001
 msgid "framebuffer only"
-msgstr "只有帧缓冲"
+msgstr "仅限于帧缓冲"
 
 #. Type: select
 #. Choices
@@ -242,7 +243,7 @@ msgstr "要支持的字符集："
 #: ../console-setup.templates:5002
 msgid ""
 "Please choose the character set that should be supported by the console font."
-msgstr "请选择终端字体需要支持的字符集。"
+msgstr "请选择控制台字体需要支持的字符集。"
 
 #. Type: select
 #. Description
@@ -251,7 +252,7 @@ msgstr "请选择终端字体需要支持的字符集。"
 msgid ""
 "If you don't use a framebuffer, the choices that start with \".\" will "
 "reduce the number of available colors on the console."
-msgstr "如果您不使用帧缓冲，由“.”开头的选项会减少终端的可用颜色。"
+msgstr "如果您不使用帧缓冲，以 \".\" 开头的选项会减少控制台的可用颜色。"
 
 #. Type: select
 #. Description
@@ -277,9 +278,9 @@ msgid ""
 "fatigue, though some symbols have a similar aspect which may be a problem "
 "for programmers."
 msgstr ""
-"“VGA”是传统外观并有中等国际化脚本覆盖程度。“Fixed”是简化外观并有更好的国际化"
-"脚本覆盖程度。“Terminus”可帮助减少视觉疲劳，但有些字符可能会看起来类似，这会"
-"给程序员带来一些麻烦。"
+"\"VGA\" 具有传统的外观和中等的国际化脚本覆盖程度。\"Fixed\" 具有简化的外观和"
+"更好的国际化脚本覆盖程度。\"Terminus\" 可帮助减少视觉疲劳，但有些字符可能会看"
+"起来类似，这可能会给程序员带来一些麻烦。"
 
 #. Type: select
 #. Description
@@ -292,7 +293,7 @@ msgid ""
 "If you prefer a bold version of the Terminus font, choose either "
 "TerminusBold (if you use a framebuffer) or TerminusBoldVGA (otherwise)."
 msgstr ""
-"如果您希望使用 Terminus 字体的粗体，请选择 TerminusBold (如果您使用帧缓冲)或"
+"如果您希望使用 Terminus 字体的粗体，请选择 TerminusBold (如果您使用帧缓冲) 或"
 "者 TerminusBoldVGA (其他情况)。"
 
 #. Type: select
@@ -321,7 +322,7 @@ msgstr "请选择控制台的字体大小。作为参考，计算机启动时的
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
-msgstr "请选择控制台的字体大小。某些字体大小可能需要 framebuffer 功能。"
+msgstr "请选择控制台的字体大小。某些字体大小可能需要启用帧缓冲。"
 
 #. Type: select
 #. Description
@@ -350,7 +351,7 @@ msgstr "其他"
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Keyboard model:"
-msgstr "键盘类型："
+msgstr "键盘型号："
 
 #. Type: select
 #. Description
@@ -407,8 +408,8 @@ msgid ""
 "The current keyboard layout in the configuration file /etc/default/keyboard "
 "is defined as XKBLAYOUT=\"${XKBLAYOUT}\" and XKBVARIANT=\"${XKBVARIANT}\"."
 msgstr ""
-"当前键盘布局在配置文件 /etc/default/keyboard 中定义为了 XKBLAYOUT="
-"\"${XKBLAYOUT}\" 和 XKBVARIANT=\"${XKBVARIANT}\"。"
+"在 /etc/default/keyboard 中，当前键盘布局的定义为 XKBLAYOUT=\"${XKBLAYOUT}\" "
+"和 XKBVARIANT=\"${XKBVARIANT}\"。"
 
 #. Type: boolean
 #. Description
@@ -419,8 +420,8 @@ msgid ""
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
-"请选择您是否想保留。如果您选择此选项，将不会再询问有关键盘布局的问题，并且当"
-"前配置将会保留。"
+"请选择您是否想保留此设置。如果您选择此选项，将不会再询问有关键盘布局的问题，"
+"并且当前配置将会保留。"
 
 #. Type: boolean
 #. Description
@@ -439,8 +440,8 @@ msgid ""
 "defined language/region and the settings in /etc/X11/xorg.conf."
 msgstr ""
 "键盘布局的默认值是 XKBLAYOUT=\"${XKBLAYOUT}\" 和 XKBVARIANT="
-"\"${XKBVARIANT}\"。此默认值根据当前设置语言和国家，以及 /etc/X11/xorg.conf 中"
-"的设置确定。"
+"\"${XKBVARIANT}\"。此默认值是根据当前的语言和区域设置，以及 /etc/X11/xorg."
+"conf 中的设置确定的。"
 
 #. Type: boolean
 #. Description
@@ -449,14 +450,15 @@ msgstr ""
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
-msgstr "请选择是否保留。如果您选择此选项，将不会再询问有关键盘布局的问题。"
+msgstr ""
+"请选择您是否想保留此设置。如果您选择此选项，将不会再询问有关键盘布局的问题。"
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
 msgid "Keep current keyboard options in the configuration file?"
-msgstr "在配置文件保持当前键盘选项？"
+msgstr "在配置文件中保留当前键盘选项吗？"
 
 #. Type: boolean
 #. Description
@@ -466,7 +468,8 @@ msgid ""
 "The current keyboard options in the configuration file /etc/default/keyboard "
 "are defined as XKBOPTIONS=\"${XKBOPTIONS}\"."
 msgstr ""
-"当前键盘选项在 /etc/default/keyboard 定义为了 XKBOPTIONS=\"${XKBOPTIONS}\"。"
+"在 /etc/default/keyboard 中，当前键盘选项的定义为 XKBOPTIONS="
+"\"${XKBOPTIONS}\"。"
 
 #. Type: boolean
 #. Description
@@ -475,7 +478,7 @@ msgstr ""
 msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
-msgstr "如果您选择保留这些选项，将不会询问有关键盘布局的问题。"
+msgstr "如果您选择保留这些选项，将不会再询问有关键盘选项的问题。"
 
 #. Type: boolean
 #. Description
@@ -493,8 +496,8 @@ msgid ""
 "\"${XKBOPTIONS}\".  It is based on the currently defined language/region and "
 "the settings in /etc/X11/xorg.conf."
 msgstr ""
-"键盘布局选项的默认值为 XKBOPTIONS=\"${XKBOPTIONS}\"。它基于当前定义的语言/区"
-"域以及 /etc/X11/xorg.conf 的设置。"
+"键盘布局选项的默认值为 XKBOPTIONS=\"${XKBOPTIONS}\"。它是基于当前定义的语言和"
+"区域，以及 /etc/X11/xorg.conf 中的设置确定的。"
 
 #. Type: boolean
 #. Description
@@ -503,7 +506,7 @@ msgstr ""
 msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
-msgstr "如果选择保留，将不会询问有关键盘选项的问题。"
+msgstr "如果您选择保留，将不会再询问有关键盘选项的问题。"
 
 #. Type: select
 #. Choices
@@ -762,15 +765,15 @@ msgid ""
 "Latin mode."
 msgstr ""
 "当键盘在国家模式下且您就想输入几个拉丁字母时，可能临时转换为拉丁模式会比较方"
-"便。只要按着所选择的切换键，键盘会保持在该模式下。该键在键盘处于拉丁模式下时"
-"也可用来输入国家字符。"
+"便。只要按着所选择的切换键，键盘就会保持在该模式下。该键也可以在键盘处于拉丁"
+"模式下时用于输入国家字符。"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "You can disable this feature by choosing \"No temporary switch\"."
-msgstr "您可以选择“无临时切换键”来禁用此功能。"
+msgstr "您可以选择 \"无临时切换键\" 来禁用此功能。"
 
 #. Type: select
 #. Choices
@@ -817,9 +820,9 @@ msgid ""
 "layout, such as foreign currency symbols and accented letters. These are "
 "often printed as an extra symbol on keys."
 msgstr ""
-"在一些键盘布局中，AltGr 是用来输入某些字符的转换键，主要用来输入当前键盘布局"
-"很少使用到的字符，比如外语中的货币符号和口音字母。这些字符通常会作为额外符号"
-"印在键上。"
+"在一些键盘布局中，AltGr 是用来输入某些字符的修饰键，主要用来输入当前键盘布局"
+"的语言中很少使用到的字符，比如外国的货币符号和重音字母。这些字符通常会作为额"
+"外符号印在按键上。"
 
 #. Type: select
 #. Choices
@@ -874,8 +877,8 @@ msgid ""
 "By default the combination Control+Alt+Backspace does nothing.  If you want "
 "it can be used to terminate the X server."
 msgstr ""
-"默认时 Control+Alt+Backspace 组合键不做任何事情。如果您愿意它可用来终止 X 服"
-"务器。"
+"默认情况下 Control+Alt+Backspace 组合键不做任何事情。如果您愿意，可以使用此组"
+"合键来终止 X 服务器。"
 
 #. Type: select
 #. Choices
