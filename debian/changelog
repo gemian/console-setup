@@ -6,6 +6,10 @@ console-setup (1.208) UNRELEASED; urgency=medium
   [ Diego Escalante Urrelo ]
   * setupcon: Check files are regular files before copying.
 
+  [ Holger Wansing ]
+  * Move COPYRIGHT file into debian/copyright, and reinstate COPYRIGHT as a
+    symlink to debian/copyright. Fixes lintian tag.
+
  -- Samuel Thibault <sthibault@debian.org>  Sat, 29 Jan 2022 15:05:29 +0100
 
 console-setup (1.207) unstable; urgency=medium
