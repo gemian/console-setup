@@ -1,4 +1,14 @@
-console-setup (1.208) UNRELEASED; urgency=medium
+console-setup (1.208) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Updated translations ]
+  * Welsh (cy.po) by Ceiri Wyn Tudur
+  * Danish (da.po) by Joe Hansen
+  * Hebrew (he.po) by Yaron Shahrabani
+  * Norwegian Nynorsk (nn.po) by aujawindar
+  * Ukrainian (uk.po) by Taras Panchenko
+  * Simplified Chinese (zh_CN.po) by Wenbin Lv
 
   [ Christian Göttsche ]
   * Drop splashy/usplash workaround.
@@ -10,7 +20,7 @@ console-setup (1.208) UNRELEASED; urgency=medium
   * Move COPYRIGHT file into debian/copyright, and reinstate COPYRIGHT as a
     symlink to debian/copyright. Fixes lintian tag.
 
- -- Samuel Thibault <sthibault@debian.org>  Sat, 29 Jan 2022 15:05:29 +0100
+ -- Holger Wansing <hwansing@mailbox.org>  Thu, 26 May 2022 23:29:31 +0200
 
 console-setup (1.207) unstable; urgency=medium
 
