@@ -1,6 +1,10 @@
 console-setup (1.209) UNRELEASED; urgency=medium
 
+  [ Holger Wansing ]
   * Adapt lintian-overrides to recent 'pointed hints' changings.
+
+  [ Raf Czlonka ]
+  * Fix script path in usage message.
 
  -- Holger Wansing <hwansing@mailbox.org>  Fri, 08 Jul 2022 21:25:22 +0200
 
