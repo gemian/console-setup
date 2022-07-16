@@ -12,16 +12,15 @@
 # Nguyễn Hùng Vũ <vuhung16@bigfoot.com>, 2001.
 # Clytie Siddall <clytie@riverland.net.au>, 2005-2010
 # Hai-Nam Nguyen <hainam@jcisio.com>, 2012
-# Trần Ngọc Quân <vnwildman@gmail.com>, 2018, 2019.
-# Tran Dinh Hai <haidinhtran@pm.me>, 2021.
+# Trần Ngọc Quân <vnwildman@gmail.com>, 2018, 2019, 2022.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: debian-installer sublevel1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2021-09-08 05:34+0000\n"
-"Last-Translator: Tran Dinh Hai <haidinhtran@pm.me>\n"
+"PO-Revision-Date: 2022-07-16 14:23+0700\n"
+"Last-Translator: Trần Ngọc Quân <vnwildman@gmail.com>\n"
 "Language-Team: Vietnamese <debian-l10n-vietnamese@lists.debian.org>\n"
 "Language: vi\n"
 "MIME-Version: 1.0\n"
@@ -191,7 +190,7 @@ msgstr "# Thái"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Combined - Latin; Slavic Cyrillic; Hebrew; basic Arabic"
-msgstr ". Tổ hợp: La-tinh; Ki-rin Xla-vợ; Do thái; A Rập cơ bản "
+msgstr ". Tổ hợp: La-tinh; Ki-rin Xla-vợ; Do thái; A Rập cơ bản"
 
 #. Type: select
 #. Choices
@@ -308,13 +307,12 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
 msgstr ""
-"Hãy chọn kích cỡ của phông chữ cho bàn giao tiếp Linux. Để so sánh, máy tính "
-"khởi động với phông chữ kích cỡ 8x16."
+"Hãy chọn kích cỡ của phông chữ cho bàn giao tiếp. Một số cỡ phông chữ cần có "
+"bộ đệm khung."
 
 #. Type: select
 #. Description
@@ -350,7 +348,7 @@ msgstr "Mô hình bàn phím:"
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
 msgid "Please select the model of the keyboard of this machine."
-msgstr "Hãy chọn kiểu bàn phím cần cấu hình cho máy tính này."
+msgstr "Hãy chọn kiểu bàn phím cho máy tính này."
 
 #. Type: select
 #. Description
@@ -745,7 +743,7 @@ msgstr "Không có phím chuyển tạm thời"
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Both Logo keys"
-msgstr "Cả hai Logo"
+msgstr "Cả hai khóa Logo"
 
 #. Type: select
 #. Description
@@ -891,7 +889,7 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "American English"
-msgstr "Anh Mỹ"
+msgstr "Tiếng Anh (Mỹ)"
 
 #. Type: select
 #. Choices
@@ -912,7 +910,7 @@ msgstr "Tiếng A Rập"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Asturian"
-msgstr "Asturian"
+msgstr "Tiếng Asturian"
 
 #. Type: select
 #. Choices
@@ -926,7 +924,7 @@ msgstr "Băng-la-đét"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Belarusian"
-msgstr "Bê-la-rút"
+msgstr "Tiếng Bê-la-rút"
 
 #. Type: select
 #. Choices
@@ -940,14 +938,14 @@ msgstr "Tiếng Băng Gan"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Belgian"
-msgstr "Bỉ"
+msgstr "Tiếng Bỉ"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Berber (Latin)"
-msgstr "Berber (Latin)"
+msgstr "Berber (La tinh)"
 
 #. Type: select
 #. Choices
@@ -968,7 +966,7 @@ msgstr "Bra-xin"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "British English"
-msgstr "Anh Quốc Anh"
+msgstr "Tiếng Anh (Anh Quốc)"
 
 #. Type: select
 #. Choices
@@ -1031,7 +1029,7 @@ msgstr "Tiếng Croát-chi-a"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Czech"
-msgstr "Séc"
+msgstr "Tiếng Séc"
 
 #. Type: select
 #. Choices
@@ -1094,7 +1092,7 @@ msgstr "Phần Lan"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "French"
-msgstr "Pháp"
+msgstr "Tiếng Pháp"
 
 #. Type: select
 #. Choices
@@ -1171,14 +1169,14 @@ msgstr "Tiếng Ái Nhĩ Lan"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Italian"
-msgstr "Ý"
+msgstr "Tiếng Ý"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Japanese"
-msgstr "Nhật"
+msgstr "Tiếng Nhật"
 
 #. Type: select
 #. Choices
@@ -1339,7 +1337,7 @@ msgstr "Ru-ma-ni"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Russian"
-msgstr "Nga"
+msgstr "Tiếng Nga"
 
 #. Type: select
 #. Choices
