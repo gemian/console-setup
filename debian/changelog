@@ -1,4 +1,6 @@
-console-setup (1.209) UNRELEASED; urgency=medium
+console-setup (1.209) unstable; urgency=medium
+
+  * Team upload.
 
   [ Holger Wansing ]
   * Adapt lintian-overrides to recent 'pointed hints' changings.
@@ -6,7 +8,11 @@ console-setup (1.209) UNRELEASED; urgency=medium
   [ Raf Czlonka ]
   * Fix script path in usage message.
 
- -- Holger Wansing <hwansing@mailbox.org>  Fri, 08 Jul 2022 21:25:22 +0200
+  [ Updated translations ]
+  * Basque (eu.po) by Gontzal Manuel Pujana Onaindia
+  * Vietnamese (vi.po) by Trần Ngọc Quân
+
+ -- Holger Wansing <hwansing@mailbox.org>  Mon, 18 Jul 2022 14:23:48 +0200
 
 console-setup (1.208) unstable; urgency=medium
 
