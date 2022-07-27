@@ -1,3 +1,10 @@
+console-setup (1.210) UNRELEASED; urgency=medium
+
+  * Pre-depend on debconf | debconf-2.0 instead of just debconf, to allow
+    cdebconf transition. Closes: #1006491
+
+ -- Holger Wansing <hwansing@mailbox.org>  Wed, 27 Jul 2022 22:34:34 +0200
+
 console-setup (1.209) unstable; urgency=medium
 
   * Team upload.
