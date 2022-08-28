@@ -8,6 +8,7 @@ ifneq (,$(filter parallel=%,$(DEB_BUILD_OPTIONS)))
 endif
 
 xkbdir := /usr/share/X11/xkb
+xkb_data_version = $(shell dpkg-query -W -f '$${source:Version}' xkb-data | cut -d - -f 1)
 
 pre := debian/preprocessor
 manprocessor := sed \
@@ -318,6 +319,7 @@ binary-indep: build deb-udeb-install
 	$(pre) debian/console-setup/DEBIAN/config
 	$(pre) debian/console-setup/DEBIAN/postinst
 	$(pre) --udeb debian/console-setup-udeb/DEBIAN/postinst
+	echo xkb-data:Version=$(xkb_data_version) >> debian/keyboard-configuration.substvars
 	dh_gencontrol
 	dh_md5sums
 	dh_builddeb
