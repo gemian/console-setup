@@ -27,8 +27,8 @@ msgstr ""
 "Project-Id-Version: nn\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2022-04-17 17:12+0000\n"
-"Last-Translator: aujawindar <eivind.odegard@sogn.no>\n"
+"PO-Revision-Date: 2022-09-25 15:22+0000\n"
+"Last-Translator: anonymous\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
@@ -90,9 +90,8 @@ msgstr "# Kyrillisk – ikkje-slaviske språk"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# Kyrillisk – ikkje-slaviske språk"
+msgstr ". Kyrillisk – ikkje-slaviske språk (for blinde brukarar)"
 
 #. Type: select
 #. Choices
@@ -107,11 +106,8 @@ msgstr ""
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr ""
-"# Kyrillisk – slaviske språk (også bosnisk og serbisk med det latinske "
-"alfabetet)"
+msgstr ". Kyrillisk – slaviske språk (for blinde brukarar)"
 
 #. Type: select
 #. Choices
@@ -139,7 +135,7 @@ msgstr "# Gresk"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". Gresk (for blinde brukarar)"
 
 #. Type: select
 #. Choices
@@ -227,9 +223,8 @@ msgstr ""
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "Tast inn vilkårlege teikn"
+msgstr "Giss optimalt teiknsett"
 
 #. Type: select
 #. Description
@@ -315,25 +310,22 @@ msgstr "Skriftstorleik:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"Vel storleik på skrifta i Linux-konsollen. Til samanlikning har skrifta som "
-"vert brukt i oppstarten storleik 16."
+"Vel storleik på skrifta i konsollen. Til samanlikning har skrifta som vert "
+"brukt i maskinoppstarten storleik 8x16."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
 msgstr ""
-"Vel storleik på skrifta i Linux-konsollen. Til samanlikning har skrifta som "
-"vert brukt i oppstarten storleik 16."
+"Vel storleik på skrifta i konsollen. Somme skriftstorleikar krev framebuffer."
 
 #. Type: select
 #. Description
@@ -408,9 +400,8 @@ msgstr "Vel utforminga som stemmer med tastaturet på denne maskina."
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
-#, fuzzy
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr "Halde på noverande partisjonsoppsett og setje opp logisk volumstyring?"
+msgstr "Halde på noverande tastaturoppsett i konfigurasjonsfila?"
 
 #. Type: boolean
 #. Description
