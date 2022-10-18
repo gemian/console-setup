@@ -1,11 +1,13 @@
-console-setup (1.211) UNRELEASED; urgency=medium
+console-setup (1.211) unstable; urgency=medium
+
+  * Team upload.
 
   * rules: get version from xkb-data.
   * control: make keybor-configuration depend on the same xkb-data version as
     during build, to make sure we have a coherent set of items in
     KeyboardNames.pl. Closes: #1012041
 
- -- Samuel Thibault <sthibault@debian.org>  Sun, 28 Aug 2022 19:31:20 +0200
+ -- Samuel Thibault <sthibault@debian.org>  Tue, 18 Oct 2022 17:14:22 +0200
 
 console-setup (1.210) unstable; urgency=medium
 
