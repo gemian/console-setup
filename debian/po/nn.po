@@ -27,8 +27,8 @@ msgstr ""
 "Project-Id-Version: nn\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2022-09-25 15:22+0000\n"
-"Last-Translator: anonymous\n"
+"PO-Revision-Date: 2022-10-22 13:48+0000\n"
+"Last-Translator: Ola Haugen Havrevoll <havrevoll@gmail.com>\n"
 "Language-Team: Norwegian Nynorsk <i18n-nn@lister.ping.uio.no>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
@@ -418,14 +418,14 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
-#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
 msgstr ""
-"Vel om vil du at den nye partisjonen skal opprettast ved starten eller ved "
-"slutten av det ledige området."
+"Vel om du vil behalda det. Om du vel dette, så vil du ikkje få nokon "
+"spørsmål om tastaturoppsettet og den gjeldande innstillinga vert teken vare "
+"på."
 
 #. Type: boolean
 #. Description
@@ -451,21 +451,19 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
-#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
 msgstr ""
-"Vel om vil du at den nye partisjonen skal opprettast ved starten eller ved "
-"slutten av det ledige området."
+"Vel om du vil behalda det. Om du vel å behalda, så vil du ikkje få nokon "
+"spørsmål om tastaturoppsettet."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid "Keep current keyboard options in the configuration file?"
-msgstr "Krypteringsoppsett mislukkast"
+msgstr "Behalda noverande tastaturval i konfigurasjonsfila?"
 
 #. Type: boolean
 #. Description
@@ -482,13 +480,12 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
 msgstr ""
-"Vel om vil du at den nye partisjonen skal opprettast ved starten eller ved "
-"slutten av det ledige området."
+"Om du vel å behalda desse vala, så vil du ikkje få nokon spørsmål om "
+"tastaturvala."
 
 #. Type: boolean
 #. Description
@@ -514,13 +511,11 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
-#, fuzzy
 msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
 msgstr ""
-"Vel om vil du at den nye partisjonen skal opprettast ved starten eller ved "
-"slutten av det ledige området."
+"Om du vel å behalda det, så vil du ikkje få nokon spørsmål om tastaturvala."
 
 #. Type: select
 #. Choices
