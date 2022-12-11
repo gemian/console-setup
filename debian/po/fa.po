@@ -26,8 +26,8 @@ msgstr ""
 "Project-Id-Version: fa sublevel1\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2021-04-25 05:03+0000\n"
-"Last-Translator: Sina Carnelious <sinacarnelious@protonmail.com>\n"
+"PO-Revision-Date: 2022-12-11 11:40+0000\n"
+"Last-Translator: Danial Behzadi <dani.behzi@ubuntu.com>\n"
 "Language-Team: Debian-l10n-persian <debian-l10n-persian@lists.debian.org>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
@@ -364,7 +364,7 @@ msgstr "لطفا نوع صفحه‌کلیدی را که به این سیستم �
 #. :sl1:
 #: ../keyboard-configuration.templates:5001
 msgid "Country of origin for the keyboard:"
-msgstr "کشور مالک این صفحه کلید:"
+msgstr "کشور خاستگاه صفحه‌کلید:"
 
 #. Type: select
 #. Description
@@ -384,14 +384,14 @@ msgstr ""
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
 msgid "Keyboard layout:"
-msgstr "طرح بندی صفحه کلید:"
+msgstr "چینش صفحه‌کلید:"
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
 msgid "Please select the layout matching the keyboard for this machine."
-msgstr "لطفا طرح بندیی که با صفحه کلید این سیستم مطابقت دارد را انتخاب کنید."
+msgstr "لطفاً چینش مطابق با صفحه‌کلید این دستگاه را برگزینید."
 
 #. Type: boolean
 #. Description
@@ -523,7 +523,7 @@ msgstr ""
 #: ../keyboard-configuration.templates:11001
 #: ../keyboard-configuration.templates:14001
 msgid "Caps Lock"
-msgstr "Caps Lock"
+msgstr "قفل تبدیل"
 
 #. Type: select
 #. Choices
@@ -542,7 +542,7 @@ msgstr "Caps Lock"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Alt (AltGr)"
-msgstr "کلید Alt (AltGr) راست"
+msgstr "دگرساز راست"
 
 #. Type: select
 #. Choices
@@ -557,14 +557,14 @@ msgstr "کلید Alt (AltGr) راست"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Control"
-msgstr "کلید Control راست"
+msgstr "مهار راست"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Right Shift"
-msgstr "کلید Shift راست"
+msgstr "تبدیل راست"
 
 #. Type: select
 #. Choices
@@ -583,7 +583,7 @@ msgstr "کلید Shift راست"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Right Logo key"
-msgstr "کلید Logo راست"
+msgstr "سوپر راست"
 
 #. Type: select
 #. Choices
@@ -598,42 +598,42 @@ msgstr "کلید Logo راست"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Menu key"
-msgstr "کلید MenuQ"
+msgstr "کلید فهرست"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Shift"
-msgstr "Alt+Shift"
+msgstr "دگرساز+تبدیل"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Shift"
-msgstr "Control+Shift"
+msgstr "مهار+تبدیل"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Control+Alt"
-msgstr "Control+Alt"
+msgstr "مهار+دگرساز"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Alt+Caps Lock"
-msgstr "Alt+Caps Lock"
+msgstr "دگرساز+قفل تبدیل"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control+Left Shift"
-msgstr "ٓControl چپ+Shift چپ"
+msgstr "مهار چپ+تبدیل چپ"
 
 #. Type: select
 #. Choices
@@ -648,21 +648,21 @@ msgstr "ٓControl چپ+Shift چپ"
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Left Alt"
-msgstr "کلید Alt چپ"
+msgstr "دگرساز چپ"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Control"
-msgstr "کلید Control چپ"
+msgstr "مهار چپ"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Left Shift"
-msgstr "کلید Shift چپ"
+msgstr "تبدیل چپ"
 
 #. Type: select
 #. Choices
@@ -681,14 +681,14 @@ msgstr "کلید Shift چپ"
 #: ../keyboard-configuration.templates:13001
 #: ../keyboard-configuration.templates:14001
 msgid "Left Logo key"
-msgstr "کلید Logo چپ"
+msgstr "سوپر چپ"
 
 #. Type: select
 #. Choices
 #. :sl1:
 #: ../keyboard-configuration.templates:11001
 msgid "Scroll Lock key"
-msgstr "کلید اسکرول_لاک"
+msgstr "کلید قفل لغزش"
 
 #. Type: select
 #. Choices
@@ -702,7 +702,7 @@ msgstr "بدون تغییر وضعیت"
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Method for toggling between national and Latin mode:"
-msgstr "روش جابجا شدن بین حالت بومی و لاتین:"
+msgstr "روش تغییر وضعیت بین حالت ملّی و لاتین:"
 
 #. Type: select
 #. Description
@@ -712,8 +712,7 @@ msgid ""
 "You will need a way to toggle the keyboard between the national layout and "
 "the standard Latin layout."
 msgstr ""
-"شما نیاز به راهی دارید که بین طرح بندی صفحه کلید بومی و طرح بندی صفحه کلید "
-"لاتین جابه‌جا شوید."
+"نیاز به راهی برای تغییر وضعیت بین چینش ملّی و چینش استاندارد لاتین دارید."
 
 #. Type: select
 #. Description
@@ -725,16 +724,17 @@ msgid ""
 "+Shift is also a popular combination; it will however lose its usual "
 "behavior in Emacs and other programs that use it for specific needs."
 msgstr ""
-"کلید Alt چپ و Caps Lock معمولا به دلایل ارگونومیک انتخاب می شود. Alt+Shift "
-"هم ترکیب متداولی است؛ با وجود این در برخی از نرم افزار ها که این ترکیب ها "
-"برای موارد مشخصی استفاده می شود ،خاصیت خود را از دست می دهند."
+"اغلب کلیدهای قفل تبدیل یا دگرساز راست به دلایل ارگونومی گزیده می‌شوند (در "
+"مورد نخست برای تغییر وضعیت بزرگی و کوچکی از تبدیل+قفل تبدیل استفاده کنید). "
+"دگرساز+تبدیل عم ترکیب محبوبی است؛ با این حال رفتار معمولش را در ای‌مکس و دیگر "
+"برنامه‌هایی که از این ترکیب برای نیازهای مشخّصی استفاده می‌کنند از دست می‌دهد."
 
 #. Type: select
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:11002
 msgid "Not all listed keys are present on all keyboards."
-msgstr "تمام کلید های لیست شده بر روی تمام صفحه کلید ها وجود ندارد."
+msgstr "تمام کلید های فهرست شده روی تمامی صفحه‌کلیدها وجود ندارد."
 
 #. Type: select
 #. Choices
@@ -933,7 +933,7 @@ msgstr "بنگلادش"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "Belarusian"
-msgstr "بلاروس"
+msgstr "بلاروسی"
 
 #. Type: select
 #. Choices
@@ -975,7 +975,7 @@ msgstr "برزیلی"
 #. :sl1:
 #: ../keyboard-configuration.templates:16001
 msgid "British English"
-msgstr "انگليسي بريتانيا"
+msgstr "انگلیسی بریتانیایی"
 
 #. Type: select
 #. Choices
