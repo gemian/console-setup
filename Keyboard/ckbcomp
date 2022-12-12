@@ -4376,7 +4376,7 @@ sub print_vector {
 		my $u = ord (uc (pack ("U", $v)));
 		my $c = ($v == $l ? $u : $l);
 		$capsvector[$mask] = $1 ."U+". sprintf ("%04x", $c);
-		if ($v != $c && $v gt 0x7f) {
+		if ($v != $c && $v > 0x7f) {
 		    $broken_caps = 1;
 		}
 	    }
