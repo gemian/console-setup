@@ -66,9 +66,9 @@ if ($acm) {
     }
     (-f $acm) or die "$0: $acm does not exist\n";
     if ($acm =~ /gz$/) {
-	open (ACM, "zcat $acm|") or die "$0: $acm: $!\n";
+	open (ACM, '-|:utf8', "zcat $acm|") or die "$0: $acm: $!\n";
     } else {
-	open (ACM, $acm) or die "$0: $acm: $!\n";
+	open (ACM, '<:utf8', $acm) or die "$0: $acm: $!\n";
     }
     while (<ACM>) {
 	s/\#.*//;
