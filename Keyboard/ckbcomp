@@ -2520,19 +2520,19 @@ if ($freebsd) {
          'dead_cedilla' => 'dead_cedilla',
          'SunFA_Cedilla' => 'dead_cedilla', # Is this recognised by X ?
          'dead_ogonek' => 'dead_ogonek',
+         'dead_macron' => 'dead_macron',
+         'dead_abovedot' => 'dead_abovedot',
+         'dead_abovering' => 'dead_abovering',
+         'dead_stroke' => 'dead_stroke',
+         'dead_belowdot' => 'dead_belowdot',
+         'dead_hook' => 'dead_hook',
+         'dead_belowcomma' => 'dead_belowcomma',
+         'dead_currency' => 'dead_currency',
+         'dead_doublegrave' => 'dead_doublegrave',
+         'dead_invertedbreve' => 'dead_invertedbreve',
+         'dead_iota' => 'dead_iota',
+         'dead_horn' => 'dead_horn',
 # Dead symbols with no support in the kernel
-         'dead_macron' => '005f',         # underscore
-         'dead_abovedot' => '002e',       # period
-         'dead_abovering' => '00b0',      # degree
-         'dead_stroke' => '002d',         # hyphen
-         'dead_belowdot' => '0323',       # ???? Vietnamese or Romanian cedilla
-         'dead_hook' => '0309',           # ???? Vietnamese
-         'dead_belowcomma' => 'VoidSymbol',
-         'dead_currency' => 'VoidSymbol',
-         'dead_doublegrave' => 'VoidSymbol',
-         'dead_invertedbreve' => 'VoidSymbol',
-         'dead_iota' => '03b9',           # ???? Greek
-         'dead_horn' => '031b',           # ???? Greek
          'dead_psili' => 'VoidSymbol',    # ???? Greek
          'dead_dasia' => 'VoidSymbol',    # ???? Greek
 # Modifiers
