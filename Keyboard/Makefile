@@ -48,6 +48,8 @@ ISO-8859-9-XCOMPOSE := $./locale/iso8859-9/Compose
 ISO-8859-13-XCOMPOSE := $./locale/iso8859-13/Compose
 ISO-8859-14-XCOMPOSE := $./locale/iso8859-14/Compose
 ISO-8859-15-XCOMPOSE := $./locale/iso8859-15/Compose
+KOI8-R-XCOMPOSE := $./locale/koi8-c/Compose
+KOI8-U-XCOMPOSE := $./locale/koi8-c/Compose
 
 $(compose_files) :
 	echo '# Compose sequences for $(charmap)' >$@

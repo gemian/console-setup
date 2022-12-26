@@ -3,6 +3,7 @@ console-setup (1.213) UNRELEASED; urgency=medium
   * Keyboard/compose_translator: Fix reading ACM files in UTF-8.
   * Keyboard/{ckbcomp,compose_translator}: Fix supporting dead accents in Linux.
     Closes: #1026986
+  * Keyboard/Makefile: Add some composition rules for KOI8.
 
  -- Samuel Thibault <sthibault@debian.org>  Mon, 26 Dec 2022 00:30:34 +0100
 
