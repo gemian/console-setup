@@ -4,6 +4,8 @@ console-setup (1.213) UNRELEASED; urgency=medium
   * Keyboard/{ckbcomp,compose_translator}: Fix supporting dead accents in Linux.
     Closes: #1026986
   * Keyboard/Makefile: Add some composition rules for KOI8.
+  * Keyboard/{Makefile,ckbcomp,ckbcomp-mini,compose_translator}: Use compose
+    files when console is in UTF-8 mode too.
 
  -- Samuel Thibault <sthibault@debian.org>  Mon, 26 Dec 2022 00:30:34 +0100
 

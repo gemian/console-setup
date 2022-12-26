@@ -34,6 +34,7 @@ sub warning {
 ########### ARGUMENTS ###############################################
 
 my $charmap;
+my $compose_charmap;
 my $acm;
 
 my $verbosity = 0;
@@ -75,6 +76,12 @@ while (@ARGV) {
 		die "$0: No more than one -charmap option is allowed\n";
 	    }
 	    $charmap = $ARGV[0];
+	    shift @ARGV;
+	} elsif (/^ccharmap$/) {
+	    if ($compose_charmap) {
+		die "$0: No more than one -ccharmap option is allowed\n";
+	    }
+	    $compose_charmap = $ARGV[0];
 	    shift @ARGV;
 	} elsif (/^v(erbose)?$/) {
 	    if ($verbosity) {
@@ -137,6 +144,7 @@ Usage: ckbcomp [args] [<layout> [<variant> [<option> ... ]]]
 Where legal args are:
 -?,-help            Print this message
 -charmap <name>     Specifies the encoding to use
+-ccharmap <name>    Specifies the encoding to use for compose sequences
 -I<dir>             Add <dir> to list of directories to be used
 -keycodes <name>    Specifies keycodes component name
 -symbols <name>     Specifies symbols component name
@@ -4782,10 +4790,14 @@ if ($broken_caps) {
 
 print $KEYMAP;
 
+if (!$compose_charmap && $charmap) {
+    $compose_charmap = $charmap;
+}
+
 if ($freebsd) {
-    if ($charmap) {
-        my $file1 = "/etc/console-setup/dkey.${charmap}.inc";
-        my $file2 = "$installdir/etc/console-setup/dkey.${charmap}.inc";
+    if ($compose_charmap) {
+        my $file1 = "/etc/console-setup/dkey.${compose_charmap}.inc";
+        my $file2 = "$installdir/etc/console-setup/dkey.${compose_charmap}.inc";
         if (-f $file1) {
             system("cat $file1");
         } elsif (-f $file2) {
@@ -4795,9 +4807,9 @@ if ($freebsd) {
 } else {
     print "strings as usual\n";
 
-    if ($charmap) {
-        my $file1 = "/etc/console-setup/compose.${charmap}.inc";
-        my $file2 = "$installdir/etc/console-setup/compose.${charmap}.inc";
+    if ($compose_charmap) {
+        my $file1 = "/etc/console-setup/compose.${compose_charmap}.inc";
+        my $file2 = "$installdir/etc/console-setup/compose.${compose_charmap}.inc";
         if (-f $file1) {
             system("cat $file1");
         } elsif (-f $file2) {

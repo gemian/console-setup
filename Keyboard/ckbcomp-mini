@@ -28,6 +28,7 @@ layout=''
 variant=''
 options=''
 charmap=''
+compose_charmap=''
 freebsd=''
 verbose_option=no
 
@@ -78,6 +79,10 @@ while [ "$*" ]; do
 	    shift
             charmap=`echo "$1"|sed 's/-//g'`
 	    ;;
+	-ccharmap)
+	    shift
+            compose_charmap=`echo "$1"|sed 's/-//g'`
+	    ;;
 	-backspace)
 	    shift
 	    ;;
@@ -89,7 +94,8 @@ while [ "$*" ]; do
 Usage: ckbcomp-mini [args] [<layout> [<variant> [<option> ... ]]]
 Where legal args are:
 -?,-help            Print this message
--charmap <charmap>  Ignored
+-charmap <name>     Specifies the encoding to use
+-ccharmap <name>    Specifies the encoding to use for compose sequences
 -I<dir>             Search for ekmaps in <dir>
 -model <name>       Specifies model used to choose component names
 -layout <name>      Specifies layout used to choose component names
@@ -175,9 +181,12 @@ utf_keymap () {
 	    | grep "^$option::" \
 	    | sed "s/^$option:://"
     done
-    if [ -n "$freebsd" -a -n "$charmap" ]; then
-        file1="/etc/console-setup/dkey.${charmap}.inc"
-        file2="$installdir/etc/console-setup/dkey.${charmap}.inc"
+    if [ -z "$compose_charmap" -a -n "$charmap" ]; then
+	compose_charmap=$charmap
+    fi
+    if [ -n "$freebsd" -a -n "$compose_charmap" ]; then
+        file1="/etc/console-setup/dkey.${compose_charmap}.inc"
+        file2="$installdir/etc/console-setup/dkey.${compose_charmap}.inc"
         if [ -f "$file1" ]; then
             cat "$file1"
         elif [ -f "$file2" ]; then
@@ -186,9 +195,9 @@ utf_keymap () {
     fi
     if [ -z "$freebsd" ]; then
         echo 'strings as usual'
-        if [ "$charmap" ]; then
-            file1="/etc/console-setup/compose.${charmap}.inc"
-            file2="$installdir/etc/console-setup/compose.${charmap}.inc"
+        if [ -n "$compose_charmap" ]; then
+            file1="/etc/console-setup/compose.${compose_charmap}.inc"
+            file2="$installdir/etc/console-setup/compose.${compose_charmap}.inc"
             if [ -f "$file1" ]; then
                 cat "$file1"
             elif [ -f "$file2" ]; then
