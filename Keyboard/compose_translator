@@ -2269,16 +2269,22 @@ foreach my $lcase (sort keys %lc_compose) {
 sub kbd_char {
     my $char = $_[0];
 
-    if (ord ($char) < 0x20
-	    || ord($char) >= 0x80 && ord($char) < 0xa0
-	    || ord($char) >= 0x100) {
+    if (ord ($char) < 0x20 || ord($char) >= 0x80) {
 	return sprintf ("U+%04X", ord($char));
-    } elsif (ord($char) >= 0xa0) {
-	return $linuxsym_table{ord($char)};
     } elsif ($char eq '\\' || $char eq '\'') {
 	return "\'\\\'\'";
     } else {
 	return "\'$char\'";
+    }
+}
+
+sub kbd_char_alias {
+    my $char = $_[0];
+
+    if (ord($char) >= 0xa0 && ord($char) < 0x100) {
+	return $linuxsym_table{ord($char)};
+    } else {
+	return kbd_char($char);
     }
 }
 
@@ -2311,7 +2317,7 @@ foreach my $sequence (sort keys %compose) {
     }
     my $seq = kbd_char($k[0])." ".kbd_char($k[1]);
     if (! defined $output{$seq}) {
-	$output{$seq} = kbd_char($compose{$sequence});
+	$output{$seq} = kbd_char_alias($compose{$sequence});
 	$original_sequences{$seq} = $sequence;
     } else {
 	my $newsequence = $sequence;
