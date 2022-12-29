@@ -3749,6 +3749,22 @@ sub include_xkb_file {
 	    warning "Can not find \"$block\" in \"$file\".\n";
 	    xkb_block_list ($file_type, '');
 	}
+
+	# Patch the Greek symbols. See Bug#1026986 and http://kbdlayout.info/kbdhe :
+	# - xkb-data makes shift-w a SIGMA, which is not that useful.
+	# - On the other hand, the kernel doesn't support double-dead-keys, and it
+	# is common usage to make shift-w a dead-acute-diaeresis (here encoded
+	# as dead_breve)
+	if ($file eq "gr") {
+		my $code = $keycodes_table{'AD02'}[0];
+		if (defined $code) {
+			my $symbol = $symbols_table{$code}[$base_group][1];
+			if ($symbol eq "Greek_SIGMA") {
+				$symbols_table{$code}[$base_group][1] = "dead_breve";
+			}
+		}
+	}
+
 	$stream = $oldstream;
 	$filename = $oldfilename;
 	$method = $oldmethod;

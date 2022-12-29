@@ -2218,6 +2218,13 @@ while (<>) {
     if ((' '. $sequence .' ') =~ / space /) {
 	next;
     }
+    # In general Linux doesn't support double dead keys, but we can special-case some of them.
+    if ($acm =~ 'ISO-8859-7.acm$') {
+	$sequence =~ s/dead_acute dead_diaeresis/dead_breve/g; #1026986, see ckbcomp
+	$sequence =~ s/dead_diaeresis dead_acute/dead_breve/g;
+    }
+    $sequence =~ s/dead_acute dead_acute/dead_doubleacute/g;
+    $sequence =~ s/dead_grave dead_grave/dead_doublegrave/g;
     if ($sequence =~ /(dead_[a-z]+) \1/) {
  	next;
     }

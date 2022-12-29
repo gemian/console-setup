@@ -1,10 +1,13 @@
-console-setup (1.215) UNRELEASED; urgency=medium
+console-setup (1.215) unstable; urgency=medium
 
+  * Team upload.
   * Keyboard/ckbcomp: Fix dead_{ogonek,caron,breve,doubleacute} in layouts.
     See kbd's ./src/libkeymap/syms.synonyms.h about them being aliases for
     other dead keys.
+  * Keyboard/{ckbcomp,compose_translator}: Special-case dead_acute +
+    dead_diaeresis for greek layouts. Closes: #1026986
 
- -- Samuel Thibault <sthibault@debian.org>  Thu, 29 Dec 2022 23:58:32 +0100
+ -- Samuel Thibault <sthibault@debian.org>  Fri, 30 Dec 2022 00:36:06 +0100
 
 console-setup (1.214) unstable; urgency=medium
 
