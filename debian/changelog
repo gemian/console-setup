@@ -1,3 +1,11 @@
+console-setup (1.215) UNRELEASED; urgency=medium
+
+  * Keyboard/ckbcomp: Fix dead_{ogonek,caron,breve,doubleacute} in layouts.
+    See kbd's ./src/libkeymap/syms.synonyms.h about them being aliases for
+    other dead keys.
+
+ -- Samuel Thibault <sthibault@debian.org>  Thu, 29 Dec 2022 23:58:32 +0100
+
 console-setup (1.214) unstable; urgency=medium
 
   * Team upload.
