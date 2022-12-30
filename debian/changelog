@@ -12,7 +12,7 @@ console-setup (1.215) unstable; urgency=medium
 console-setup (1.214) unstable; urgency=medium
 
   * Team upload.
-  * Keyboard/compose_translator: Do not user Linux aliases for the diacritical
+  * Keyboard/compose_translator: Do not use Linux aliases for the diacritical
     and base, they don't actually seem supported there by kbd. Closes: #1027247
 
  -- Samuel Thibault <sthibault@debian.org>  Thu, 29 Dec 2022 10:15:58 +0100
