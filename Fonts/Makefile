@@ -270,6 +270,9 @@ ALL_FULL_FONTS := $(filter $./Full%,$(ALL_FONTS))
 
 ###########################################################################
 
+$./bdf/%.bdf: /usr/share/unifont/%.hex
+	hex2bdf < $< > $@
+
 doubled_bdfs := $(call adddouble, \
 			$(wildcard $(addprefix $./, \
 				bdf/legacy16?.bdf bdf/legacy14?.bdf \
@@ -334,15 +337,15 @@ $(ALL_LINUX_FONTS) : symbolsets = \
 $(ALL_BSD_FONTS) : symbolsets = \
  $(fntdir)/ascii.set+$(fntdir)/freebsd.set+$(codesetfile)+:$(fntdir)/useful.set
 
-$(ALL_LINUX_NONFB_FONTS) :
+$(ALL_LINUX_NONFB_FONTS) : $./bdf/unifont.bdf
 	umask 022; $(fntdir)/bdf2psf --log $(@:%.psf=%.log) $(bdfs) $(equivalents) \
 			$(symbolsets) $(size) $@ $(@:%.psf=%.sfm)
 
-$(ALL_LINUX_FB_FONTS) :
+$(ALL_LINUX_FB_FONTS) : $./bdf/unifont.bdf
 	umask 022; $(fntdir)/bdf2psf --fb --log $(@:%.psf=%.log) $(bdfs) $(equivalents) \
 				$(symbolsets) $(size) $@ $(@:%.psf=%.sfm)
 
-$(ALL_BSD_FONTS) :
+$(ALL_BSD_FONTS) : $./bdf/unifont.bdf
 	umask 022; $(fntdir)/bdf2psf --raw --log $(@:%.raw=%.raw.log) $(bdfs) \
 		$(equivalents) $(symbolsets) $(size) $@ $(@:%.raw=%.raw.sfm)
 
@@ -395,13 +398,18 @@ $~clean:
 	cd $(fntdir) && \
 		rm -f *~ fontsets/*~ \
 			*.psf *.psf.gz *.sfm *.log *.raw *.fnt *.scm \
-			terminfo termcap
+			terminfo termcap bdf/unifont.bdf
+
+bdf .PHONY : $~bdf
+$~bdf:
+	rm -f $(doubled_bdfs)
+	$(MAKE) $(doubled_bdfs)
+	rm -f $(fntdir)/bdf/unifont.bdf
+	$(MAKE) $(fntdir)/bdf/unifont.bdf
 
 # The script 'fontcodesets' computes which codesets a font supports
 maintainer-clean .PHONY : $~maintainer-clean
-$~maintainer-clean : $~clean
-	rm -f $(doubled_bdfs)
-	$(MAKE) $(doubled_bdfs)
+$~maintainer-clean : $~clean $~bdf
 	echo "I18N_FONT_NAMES := " $(sort $(foreach face, $(NONLEGACY_FACES), \
 	$(addsuffix -$(face), $(shell cd $(fntdir); ./fontcodesets $($(face)-BDFS)))) \
 	$(foreach face, $(LEGACY_FACES), \
