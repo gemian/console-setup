@@ -1,9 +1,9 @@
-console-setup (1.216) UNRELEASED; urgency=medium
+console-setup (1.216) unstable; urgency=medium
 
   * Fonts/Makefile: Generate unifont.bdf from the getting-updates unifont
     package. Closes: #1027446
 
- -- Samuel Thibault <sthibault@debian.org>  Sat, 31 Dec 2022 18:28:17 +0100
+ -- Samuel Thibault <sthibault@debian.org>  Tue, 31 Jan 2023 19:49:03 +0100
 
 console-setup (1.215) unstable; urgency=medium
 
