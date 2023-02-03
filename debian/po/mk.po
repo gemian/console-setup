@@ -9,6 +9,7 @@
 #
 # Georgi Stanojevski, <glisha@gmail.com>, 2004, 2005, 2006.
 # Georgi Stanojevski <georgis@unet.com.mk>, 2005, 2006.
+# Kristijan Fremen Velkovski <me@krisfremen.com>, 2023.
 #
 # Translations from iso-codes:
 #   Alastair McKinstry <mckinstry@computer.org>, 2002
@@ -24,7 +25,7 @@ msgstr ""
 "Project-Id-Version: debian-installer_packages_po_sublevel1_mk\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2022-12-14 18:48+0000\n"
+"PO-Revision-Date: 2023-02-02 11:37+0000\n"
 "Last-Translator: Kristijan Fremen Velkovski <me@krisfremen.com>\n"
 "Language-Team: Macedonian <>\n"
 "Language: mk\n"
@@ -87,9 +88,8 @@ msgstr "# Кирилица - несловенски јазици"
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# Кирилица - несловенски јазици"
+msgstr ". Кирилица - несловенски јазици (за слепи корисници)"
 
 #. Type: select
 #. Choices
