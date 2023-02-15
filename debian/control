@@ -3,8 +3,8 @@ Section: utils
 Priority: optional
 Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Uploaders: Anton Zinoviev <zinoviev@debian.org>
-Build-Depends-Indep: xkb-data (>= 1.6), locales-all, sharutils, unifont, unifont-bin
-Build-Depends: perl, debhelper (>= 9.20160709), po-debconf, libxml-parser-perl, bdfresize, liblocale-gettext-perl
+Build-Depends-Indep: xkb-data (>= 1.6), locales-all, sharutils
+Build-Depends: perl, debhelper (>= 9.20160709), po-debconf, libxml-parser-perl, bdfresize, liblocale-gettext-perl, unifont, unifont-bin
 Standards-Version: 3.9.1
 Vcs-Browser: https://salsa.debian.org/installer-team/console-setup
 Vcs-Git: https://salsa.debian.org/installer-team/console-setup.git

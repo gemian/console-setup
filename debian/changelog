@@ -3,6 +3,9 @@ console-setup (1.217) UNRELEASED; urgency=medium
   [ Updated translations ]
   * Macedonian (mk.po) by Kristijan Fremen Velkovski
 
+  [ Samuel Thibault ]
+  * control: Move unifont and unifont-bin build-deps to b-d.
+
  -- Cyril Brulebois <kibi@debian.org>  Wed, 15 Feb 2023 16:54:35 +0100
 
 console-setup (1.216) unstable; urgency=medium
