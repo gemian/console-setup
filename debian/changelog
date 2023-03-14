@@ -1,3 +1,13 @@
+console-setup (1.218) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Updated translations ]
+  * German (de.po) by Holger Wansing
+  * Vietnamese (vi.po) by tictactoe
+
+ -- Holger Wansing <hwansing@mailbox.org>  Tue, 14 Mar 2023 21:19:40 +0100
+
 console-setup (1.217) unstable; urgency=medium
 
   [ Updated translations ]
