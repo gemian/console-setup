@@ -25,8 +25,8 @@ msgstr ""
 "Project-Id-Version: debian-installer.2006071\n"
 "Report-Msgid-Bugs-To: console-setup@packages.debian.org\n"
 "POT-Creation-Date: 2020-10-28 20:01+0000\n"
-"PO-Revision-Date: 2019-08-28 18:09+0000\n"
-"Last-Translator: leela <53352@protonmail.com>\n"
+"PO-Revision-Date: 2023-04-09 20:53+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian\n"
 "Language: ka\n"
 "MIME-Version: 1.0\n"
@@ -88,9 +88,8 @@ msgstr "# კირილიცა - არასლავური ენებ
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Cyrillic - non-Slavic languages (for blind users)"
-msgstr "# კირილიცა - არასლავური ენები"
+msgstr ". კირილიცა - არასლავური ენები (ბრმა მომხმარებლებისთვის)"
 
 #. Type: select
 #. Choices
@@ -103,9 +102,8 @@ msgstr "# კირილიცა - სლავური ენები (ა�
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid ". Cyrillic - Slavic languages (for blind users)"
-msgstr "# კირილიცა - სლავური ენები (ასევე ბოსნიური და სერბული ლათინური)"
+msgstr ". კირილიცა - სლავური ენები (ბრმა მომხმარებლებისთვის)"
 
 #. Type: select
 #. Choices
@@ -133,7 +131,7 @@ msgstr "# ბერძნული"
 #. :sl3:
 #: ../console-setup.templates:5001
 msgid ". Greek (for blind users)"
-msgstr ""
+msgstr ". ბერძნული (ბრმა მომხმარებლებისთვის)"
 
 #. Type: select
 #. Choices
@@ -217,9 +215,8 @@ msgstr ". კომბინირებული - ლათინური; �
 #. Choices
 #. :sl3:
 #: ../console-setup.templates:5001
-#, fuzzy
 msgid "Guess optimal character set"
-msgstr "აკრიფეთ რამდენიმე ასო ალალბედზე"
+msgstr "ოპტიმალური სიმბოლოების სეტის მიხვედრა"
 
 #. Type: select
 #. Description
@@ -256,7 +253,7 @@ msgstr ""
 #. :sl3:
 #: ../console-setup.templates:6001
 msgid "Font for the console:"
-msgstr "კონსოლის შრიფტი"
+msgstr "კონსოლის ფონტი:"
 
 #. Type: select
 #. Description
@@ -306,25 +303,23 @@ msgstr "შრიფტის ზომა:"
 #. Description
 #. :sl3:
 #: ../console-setup.templates:7001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console. For reference, the font "
 "used when the computer boots has size 8x16."
 msgstr ""
-"გთხოვთ ამოირჩიოთ ლინუქსის კონსოლის შრიფტი. შედარებისათვის გაითვალისწინეთ, "
-"რომ ჩატვირთვისას კომპიუტერი 16 ზომის შრიფტს იყენებს."
+"გთხოვთ ამოირჩიოთ კონსოლის ფონტის ზომა. შედარებისათვის გაითვალისწინეთ, რომ "
+"ჩატვირთვისას კომპიუტერი 8x16 ზომის ფონტს იყენებს."
 
 #. Type: select
 #. Description
 #. :sl3:
 #: ../console-setup.templates:8001
-#, fuzzy
 msgid ""
 "Please select the size of the font for the console.  Some font sizes require "
 "framebuffer."
 msgstr ""
-"გთხოვთ ამოირჩიოთ ლინუქსის კონსოლის შრიფტი. შედარებისათვის გაითვალისწინეთ, "
-"რომ ჩატვირთვისას კომპიუტერი 16 ზომის შრიფტს იყენებს."
+"გთხოვთ ამოირჩიოთ კონსოლის ფონტი.   ზოგიერთი ფონტის ზომა framebuffer-ს "
+"მოითხოვს."
 
 #. Type: select
 #. Description
@@ -354,17 +349,15 @@ msgstr "სხვა"
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Keyboard model:"
-msgstr "კლავიატურის განლაგების ამორჩევა"
+msgstr "კლავიატურის მოდელი:"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:4001
-#, fuzzy
 msgid "Please select the model of the keyboard of this machine."
-msgstr "გთხოვთ ამოირჩიოთ კლავიატურის ტიპი კონფიგურაციისათვის."
+msgstr "აირჩიეთ ამ მანქანის კლავიატურის მოდელი."
 
 #. Type: select
 #. Description
@@ -388,9 +381,8 @@ msgstr ""
 #. Description
 #. :sl1:
 #: ../keyboard-configuration.templates:6001
-#, fuzzy
 msgid "Keyboard layout:"
-msgstr "კლავიატურის განლაგების ამორჩევა"
+msgstr "კლავიატურის განლაგება:"
 
 #. Type: select
 #. Description
@@ -404,10 +396,8 @@ msgstr "გთხოვთ გადაამოწმოთ, რომ ამ �
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
-#, fuzzy
 msgid "Keep the current keyboard layout in the configuration file?"
-msgstr ""
-"შევინახოთ დისკების დაყოფის მიმდინარე სქემა და დავიწყოთ LVM-ის კონფიგურაცია?"
+msgstr "შევინახო მიმდინარე კლავიატურის განლაგება კონფიგურაციის ფაილში?"
 
 #. Type: boolean
 #. Description
@@ -422,12 +412,14 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:7001
-#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked and the current "
 "configuration will be preserved."
-msgstr "სად გაიხსნას ახალი დანაყოფი - თავისუფალი სივრცის თავში თუ ბოლოში?"
+msgstr ""
+"აირჩიეთ, გნებავთ თუ არა, შეინარჩუნოთ ის. თუ აირჩევთ ამ პარამეტრს, "
+"კლავიატურის განლაგების შესახებ კითხვებს აღარ დაგისვამთ და მიმდინარე "
+"კონფიგურაცია შენარჩუნებული იქნება."
 
 #. Type: boolean
 #. Description
@@ -450,19 +442,19 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:8001
-#, fuzzy
 msgid ""
 "Please choose whether you want to keep it. If you choose this option, no "
 "questions about the keyboard layout will be asked."
-msgstr "სად გაიხსნას ახალი დანაყოფი - თავისუფალი სივრცის თავში თუ ბოლოში?"
+msgstr ""
+"აირჩიეთ, გნებავთ თუ არა, შეინარჩუნოთ ის. თუ აირჩევთ ამ პარამეტრს, "
+"კლავიატურის განლაგების შესახებ კითხვებს აღარ დაგისვამთ."
 
 #. Type: boolean
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid "Keep current keyboard options in the configuration file?"
-msgstr "შეცდომა დაშიფვრის კონფიგურაციისას"
+msgstr "შევინარჩუნო მიმდინარე კლავიატურის პარამეტრები კონფიგურაციის ფაილში?"
 
 #. Type: boolean
 #. Description
@@ -477,11 +469,12 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:9001
-#, fuzzy
 msgid ""
 "If you choose to keep these options, no questions about the keyboard options "
 "will be asked."
-msgstr "სად გაიხსნას ახალი დანაყოფი - თავისუფალი სივრცის თავში თუ ბოლოში?"
+msgstr ""
+"თუ აირჩევთ ამ პარამეტრების შენარჩუნებას, კლავიატურის განლაგების შესახებ "
+"კითხვებს აღარ დაგისვამთ."
 
 #. Type: boolean
 #. Description
@@ -504,11 +497,12 @@ msgstr ""
 #. Description
 #. :sl3:
 #: ../keyboard-configuration.templates:10001
-#, fuzzy
 msgid ""
 "If you choose to keep it, no questions about the keyboard options will be "
 "asked."
-msgstr "სად გაიხსნას ახალი დანაყოფი - თავისუფალი სივრცის თავში თუ ბოლოში?"
+msgstr ""
+"თუ აირჩევთ, შეინარჩუნოთ ის, კლავიატურის პარამეტრების შესახებ კითხვებს აღარ "
+"დაგისვამთ."
 
 #. Type: select
 #. Choices
@@ -732,7 +726,7 @@ msgstr ""
 #. :sl2:
 #: ../keyboard-configuration.templates:12001
 msgid "No temporary switch"
-msgstr ""
+msgstr "დროებით კომუტატორის გარეშე"
 
 #. Type: select
 #. Choices
@@ -743,14 +737,14 @@ msgstr ""
 #: ../keyboard-configuration.templates:12001
 #: ../keyboard-configuration.templates:13001
 msgid "Both Logo keys"
-msgstr ""
+msgstr "ორივე ლოგოს ღილაკი"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:12002
 msgid "Method for temporarily toggling between national and Latin input:"
-msgstr ""
+msgstr "ნაციონალურსა და ლათინურ შეყვანას შორის გადართვის დროებითი მეთოდი:"
 
 #. Type: select
 #. Description
@@ -775,37 +769,36 @@ msgstr ""
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
-#, fuzzy
 msgid "The default for the keyboard layout"
-msgstr "კლავიატურის განლაგების ამორჩევა"
+msgstr "კლავიატურის განლაგების ნაგულისხმები მნიშვნელობა"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "No AltGr key"
-msgstr ""
+msgstr "AltGr ღილაკის გარეშე"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Keypad Enter key"
-msgstr ""
+msgstr "Keypad-ის Enter ღილაკი"
 
 #. Type: select
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:13001
 msgid "Both Alt keys"
-msgstr ""
+msgstr "ორივე Alt ღილაკი"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:13002
 msgid "Key to function as AltGr:"
-msgstr ""
+msgstr "AltGr-ის მაგიერ გამოსაყენებელი ღილაკი:"
 
 #. Type: select
 #. Description
@@ -822,17 +815,15 @@ msgstr ""
 #. Choices
 #. :sl2:
 #: ../keyboard-configuration.templates:14001
-#, fuzzy
 msgid "No compose key"
-msgstr "ამოირჩიეთ დისკი:"
+msgstr "Compose ღილაკის გარეშე"
 
 #. Type: select
 #. Description
 #. :sl2:
 #: ../keyboard-configuration.templates:14002
-#, fuzzy
 msgid "Compose key:"
-msgstr "ამოირჩიეთ დისკი:"
+msgstr "ღილაკი Compose:"
 
 #. Type: select
 #. Description
