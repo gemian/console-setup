@@ -329,7 +329,7 @@ $(ALL_FULL_FONTS) : size = 512
 
 $(ALL_NONFULL_FONTS) : equivalents = $(if $(findstring Uni1, $(codeset)), \
 		'$(fntdir)/standard.equivalents'+'$(fntdir)/arabic.equivalents', \
-			'$(fntdir)/standard.equivalents)'
+			'$(fntdir)/standard.equivalents')
 $(ALL_FULL_FONTS) : equivalents = /dev/null
 
 $(ALL_LINUX_FONTS) : symbolsets = \
