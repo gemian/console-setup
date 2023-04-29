@@ -338,15 +338,15 @@ $(ALL_BSD_FONTS) : symbolsets = \
  $(fntdir)/ascii.set+$(fntdir)/freebsd.set+$(codesetfile)+:$(fntdir)/useful.set
 
 $(ALL_LINUX_NONFB_FONTS) : $./bdf/unifont.bdf
-	umask 022; $(fntdir)/bdf2psf --log $(@:%.psf=%.log) $(bdfs) $(equivalents) \
+	umask 022; '$(fntdir)/bdf2psf' --log $(@:%.psf=%.log) $(bdfs) $(equivalents) \
 			$(symbolsets) $(size) $@ $(@:%.psf=%.sfm)
 
 $(ALL_LINUX_FB_FONTS) : $./bdf/unifont.bdf
-	umask 022; $(fntdir)/bdf2psf --fb --log $(@:%.psf=%.log) $(bdfs) $(equivalents) \
+	umask 022; '$(fntdir)/bdf2psf' --fb --log $(@:%.psf=%.log) $(bdfs) $(equivalents) \
 				$(symbolsets) $(size) $@ $(@:%.psf=%.sfm)
 
 $(ALL_BSD_FONTS) : $./bdf/unifont.bdf
-	umask 022; $(fntdir)/bdf2psf --raw --log $(@:%.raw=%.raw.log) $(bdfs) \
+	umask 022; '$(fntdir)/bdf2psf' --raw --log $(@:%.raw=%.raw.log) $(bdfs) \
 		$(equivalents) $(symbolsets) $(size) $@ $(@:%.raw=%.raw.sfm)
 
 %.fnt : %.raw
@@ -375,15 +375,15 @@ $(SCRNMAPS) : somefont = \
 $(SCRNMAPS) : sfm = $(somefont:%.fnt=%.raw.sfm)
 
 $(SCRNMAPS) : $(UUENCODED_BSD_FONTS) $./freebsd.set $./fbsdmap
-	umask 022; $(fntdir)/fbsdmap --binaryscm $(fntdir)/freebsd.set $(sfm) \
+	umask 022; '$(fntdir)/fbsdmap' --binaryscm $(fntdir)/freebsd.set $(sfm) \
 		$(fntdir)/../acm/$(encoding).acm | \
 		uuencode $(encoding_fontset) >$@
 
 $./terminfo : $./fbsdmap
-	$(fntdir)/fbsdmap --terminfo >$@
+	'$(fntdir)/fbsdmap' --terminfo >$@
 
 $./termcap : $./fbsdmap
-	$(fntdir)/fbsdmap --termcap >$@
+	'$(fntdir)/fbsdmap' --termcap >$@
 
 build-linux .PHONY : gzipped-linux-fonts
 gzipped-linux-fonts : $(GZIPPED_LINUX_FONTS)
