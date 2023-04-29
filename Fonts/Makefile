@@ -284,7 +284,7 @@ $./bdf/%-double.bdf : source = $(subst -double.bdf,.bdf,$@)
 $./bdf/%-double.bdf : 
 	bdfresize -f 2 -b 1 $(source) >$@
 
-# $(call add_bdf, xxx+yyy) = $(fntdir)/bdf/xxx+$(fntdir)/bdf/yyy
+# $(call add_bdf, xxx+yyy) = '$(fntdir)/bdf/xxx'+'$(fntdir)/bdf/yyy'
 empty :=
 space := $(empty) $(empty)
 add_bdf = $(patsubst +%, %, \
@@ -328,14 +328,14 @@ $(ALL_NONFULL_FONTS) : size = $(subst .,,$(suffix $(codesetfile)))
 $(ALL_FULL_FONTS) : size = 512
 
 $(ALL_NONFULL_FONTS) : equivalents = $(if $(findstring Uni1, $(codeset)), \
-		$(fntdir)/standard.equivalents+$(fntdir)/arabic.equivalents, \
-			$(fntdir)/standard.equivalents)
+		'$(fntdir)/standard.equivalents'+'$(fntdir)/arabic.equivalents', \
+			'$(fntdir)/standard.equivalents)'
 $(ALL_FULL_FONTS) : equivalents = /dev/null
 
 $(ALL_LINUX_FONTS) : symbolsets = \
- $(fntdir)/ascii.set+$(fntdir)/linux.set+$(codesetfile)+:$(fntdir)/useful.set
+ '$(fntdir)/ascii.set'+'$(fntdir)/linux.set'+$(codesetfile)+:'$(fntdir)/useful.set'
 $(ALL_BSD_FONTS) : symbolsets = \
- $(fntdir)/ascii.set+$(fntdir)/freebsd.set+$(codesetfile)+:$(fntdir)/useful.set
+ '$(fntdir)/ascii.set'+'$(fntdir)/freebsd.set'+$(codesetfile)+:'$(fntdir)/useful.set'
 
 $(ALL_LINUX_NONFB_FONTS) : $./bdf/unifont.bdf
 	umask 022; '$(fntdir)/bdf2psf' --log $(@:%.psf=%.log) $(bdfs) $(equivalents) \
@@ -375,8 +375,8 @@ $(SCRNMAPS) : somefont = \
 $(SCRNMAPS) : sfm = $(somefont:%.fnt=%.raw.sfm)
 
 $(SCRNMAPS) : $(UUENCODED_BSD_FONTS) $./freebsd.set $./fbsdmap
-	umask 022; '$(fntdir)/fbsdmap' --binaryscm $(fntdir)/freebsd.set $(sfm) \
-		$(fntdir)/../acm/$(encoding).acm | \
+	umask 022; '$(fntdir)/fbsdmap' --binaryscm '$(fntdir)/freebsd.set' $(sfm) \
+		'$(fntdir)/../acm/$(encoding).acm' | \
 		uuencode $(encoding_fontset) >$@
 
 $./terminfo : $./fbsdmap
@@ -395,7 +395,7 @@ scrnmaps : $(SCRNMAPS)
 
 clean .PHONY : $~clean
 $~clean:
-	cd $(fntdir) && \
+	cd '$(fntdir)' && \
 		rm -f *~ fontsets/*~ \
 			*.psf *.psf.gz *.sfm *.log *.raw *.fnt *.scm \
 			terminfo termcap bdf/unifont.bdf
@@ -404,17 +404,17 @@ bdf .PHONY : $~bdf
 $~bdf:
 	rm -f $(doubled_bdfs)
 	$(MAKE) $(doubled_bdfs)
-	rm -f $(fntdir)/bdf/unifont.bdf
-	$(MAKE) $(fntdir)/bdf/unifont.bdf
+	rm -f '$(fntdir)/bdf/unifont.bdf'
+	$(MAKE) '$(fntdir)/bdf/unifont.bdf'
 
 # The script 'fontcodesets' computes which codesets a font supports
 maintainer-clean .PHONY : $~maintainer-clean
 $~maintainer-clean : $~clean $~bdf
 	echo "I18N_FONT_NAMES := " $(sort $(foreach face, $(NONLEGACY_FACES), \
-	$(addsuffix -$(face), $(shell cd $(fntdir); ./fontcodesets $($(face)-BDFS)))) \
+	$(addsuffix -$(face), $(shell cd '$(fntdir)'; ./fontcodesets $($(face)-BDFS)))) \
 	$(foreach face, $(LEGACY_FACES), \
 		$(addsuffix -$(face), $($(face)-CODESETS)))) \
 	>$(fntdir)/soft.Makefile
 	echo -n ENCODING_FONTSET := >>$(fntdir)/soft.Makefile
-	for a in $(fntdir)/../acm/*.acm; do aa=`basename $$a .acm`; for f in $(fntdir)/fontsets/*.256; do ff=`basename $$f .256`; echo -n ' ' $${aa}_$${ff}; done; done >>$(fntdir)/soft.Makefile
+	for a in '$(fntdir)/../acm/*.acm'; do aa=`basename $$a .acm`; for f in '$(fntdir)/fontsets/*.256'; do ff=`basename $$f .256`; echo -n ' ' $${aa}_$${ff}; done; done >>$(fntdir)/soft.Makefile
 	echo >>$(fntdir)/soft.Makefile
