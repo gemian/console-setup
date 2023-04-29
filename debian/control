@@ -12,7 +12,7 @@ Vcs-Git: https://salsa.debian.org/installer-team/console-setup.git
 Package: keyboard-configuration
 Architecture: all
 Multi-Arch: foreign
-Depends: ${misc:Depends}, liblocale-gettext-perl, xkb-data (>= ${xkb-data:Version}~), xkb-data (<< ${xkb-data:Version}A)
+Depends: ${misc:Depends}, liblocale-gettext-perl, xkb-data (>= ${xkb-data:Version}~)
 Pre-Depends: debconf | debconf-2.0
 Breaks: console-setup (<< 1.71), console-setup-mini (<< 1.47)
 Replaces: console-setup (<< 1.47), console-setup-mini (<< 1.47)
